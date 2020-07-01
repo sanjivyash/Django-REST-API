@@ -1,3 +1,5 @@
 dj/
 venv/
 .vscode/
+api/api/private.py
+api/api/__pycache__/private.cpython-38.pyc

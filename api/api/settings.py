@@ -74,6 +74,7 @@ WSGI_APPLICATION = 'api.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
+from . import private
 
 DATABASES = {
     'default': {
@@ -81,8 +82,8 @@ DATABASES = {
         'NAME': 'bank',
         'HOST': '127.0.0.1',
         'PORT': '3306',
-        'USER': 'root',
-        'PASSWORD': 'yash@2001',
+        'USER': private.user,
+        'PASSWORD': private.password
     }
 }
 
