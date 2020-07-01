@@ -1,5 +1,7 @@
 # Django-REST-API
 
+Please set up the sql file shown in a database called bank.
+
 Take the following steps to run the web application: 
 * Set up a virtual environment using pipenv or virtualenv
 ```
