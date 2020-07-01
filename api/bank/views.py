@@ -6,7 +6,7 @@ from django.http import JsonResponse
 
 # Create your views here.
 class ViewBankFromIFSC(View):
-
+# ?ifsc=ifsc query string
     def get(self, request):
         if request.GET.get('ifsc'):
             ifsc = request.GET.get('ifsc')
@@ -27,7 +27,7 @@ class ViewBankFromIFSC(View):
 
 
 class ViewBranchesInCity(View):
-
+# ?city=city&bank=name query string
     def get(self, request):
         if request.GET.get('city') and request.GET.get('bank'):
             city = request.GET.get('city')
