@@ -10,7 +10,6 @@ class ViewBankFromIFSC(View):
     def get(self, request):
         if request.GET.get('ifsc'):
             ifsc = request.GET.get('ifsc')
-            print(ifsc)
             bank = BankDetails.objects.filter(bank_ifsc=ifsc)
             try:
                 bank = bank[0]
